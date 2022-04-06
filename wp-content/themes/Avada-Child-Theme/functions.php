@@ -3,7 +3,7 @@
 
 function theme_enqueue_styles() {
     wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( 'fusion-dynamic-css' ) );
-    wp_enqueue_style( 'font-style',  'https://use.typekit.net/lae7hau.css' );        
+    wp_enqueue_style( 'font-style',  'https://use.typekit.net/lae7hau.css', array( 'fusion-dynamic-css' ) );        
 }
 add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
 

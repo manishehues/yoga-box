@@ -84,18 +84,20 @@ if ( ! defined( 'ABSPATH' ) ) {
 				$(".closeMenu").click(function(){
 					$(".customnavbar").removeClass("openMenu");
 				});
-                
-                
-                jQuery(".has_child >a").click(function(){
 
-					jQuery(this).parent().toggleClass('show-submenu');
+
+                
+                
+				jQuery(".has_child").click(function(){
+
+					jQuery(this).toggleClass('show-submenu');
 
 				});
 
 
-				$(".has_child").click(function(){
-					jQuery(this).find(".submenus").toggle();
-				})
+				// $(".has_child").click(function(){
+				// 	jQuery(this).find(".submenus").toggle();
+				// })
 
 				$("video").attr("playsinline",true); 
 
